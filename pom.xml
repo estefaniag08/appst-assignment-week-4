@@ -112,7 +112,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<scm>
-		<developerConnection>scm:git:git@github.com:estefaniag08/appst-assignment-week-4.git</developerConnection>
+		<developerConnection>scm:git:ssh://git@github.com:estefaniag08/appst-assignment-week-4.git</developerConnection>
 		<url>https://github.com/estefaniag08/appst-assignment-week-4</url>
 		<tag>HEAD</tag>
 	</scm>
