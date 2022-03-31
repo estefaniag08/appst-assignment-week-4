@@ -10,7 +10,7 @@
     </parent>
     <groupId>dev.applaudostudios.examples</groupId>
     <artifactId>assignment-week-4</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>assignment-week-4</name>
     <description>Demo project for Spring Boot</description>
 
@@ -92,7 +92,7 @@
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
+                    <source>17</source>
                 </configuration>
             </plugin>
         </plugins>
