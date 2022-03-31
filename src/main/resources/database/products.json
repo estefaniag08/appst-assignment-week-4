@@ -1,0 +1,38 @@
+[
+  {
+    "code": 100,
+    "name": "Shirt",
+    "stock": 100,
+    "unitPrice": 30.0
+  },
+  {
+    "code": 200,
+    "name": "T-Shirt",
+    "stock": 5,
+    "unitPrice": 20.0
+  },
+  {
+    "code": 300,
+    "name": "Shorts",
+    "stock": 1,
+    "unitPrice": 12.5
+  },
+  {
+    "code": 400,
+    "name": "Jeans",
+    "stock": 10,
+    "unitPrice": 55.0
+  },
+  {
+    "code": 500,
+    "name": "Sneakers",
+    "stock": 0,
+    "unitPrice": 100.0
+  },
+  {
+    "code": 600,
+    "name": "Free",
+    "stock": 1,
+    "unitPrice": 0.0
+  }
+]
