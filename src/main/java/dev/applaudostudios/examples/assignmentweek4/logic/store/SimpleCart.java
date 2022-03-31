@@ -26,7 +26,7 @@ public class SimpleCart extends Cart implements Observable {
             System.out.print("Reservation Code: ");
             System.out.println(getOrder().getReservationCode().toString());
 
-            notificationObserver.updated("Funds reserved");
+            notify("Funds reserved");
             return true;
         }
         System.out.println("Cart couldn't be processed");
@@ -41,11 +41,11 @@ public class SimpleCart extends Cart implements Observable {
             Item inventoryItem = inventory.showInventory().get(item.getCode());
             if (!this.inventory.reserve(inventoryItem, item.getUnits())) {
                 System.out.println("The item couldn't be reserved");
-                notificationObserver.updated("Inventory not updated");
+                notify("Inventory not updated");
                 return false;
             }
         }
-        notificationObserver.updated("Inventory updated");
+        notify("Inventory updated");
         return true;
     }
 
@@ -55,7 +55,7 @@ public class SimpleCart extends Cart implements Observable {
         if (getPaymentMethod().pay(paymentInformation, getOrder().getVerificationCode())) {
             System.out.print("Payment code: ");
             System.out.println(getOrder().getVerificationCode().toString());
-            notificationObserver.updated("Paid order.");
+            notify("Paid order.");
             return true;
         }
         System.out.println("There was a problem with your payment.");
@@ -80,5 +80,11 @@ public class SimpleCart extends Cart implements Observable {
     @Override
     public void detach(Observer observer) {
         notificationObserver = null;
+    }
+
+    public void notify(String notification){
+        if (notificationObserver != null) {
+            notificationObserver.updated(notification);
+        }
     }
 }

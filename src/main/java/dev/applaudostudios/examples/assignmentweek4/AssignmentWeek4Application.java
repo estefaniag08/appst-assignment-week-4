@@ -72,7 +72,7 @@ public class AssignmentWeek4Application implements CommandLineRunner {
 
         order = new Order(listOfItems);
         cart = new SimpleCart(paymentMethodFactory.getPaymentMethod(""), inventory);
-        cart.attach(cartLogger);
+        //cart.attach(cartLogger);
         cart.setOrder(order);
         cart.processCart(creditCard);
 
