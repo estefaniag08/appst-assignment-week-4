@@ -16,6 +16,7 @@
     <properties>
         <java.version>17</java.version>
         <tests.skip>true</tests.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
 
     <dependencies>
